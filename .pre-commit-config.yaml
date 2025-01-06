@@ -1,12 +1,12 @@
 ---
 repos:
     - repo: "https://github.com/commitizen-tools/commitizen"
-      rev: v3.18.4
+      rev: v4.1.0
       hooks:
           - id: "commitizen"
 
     - repo: "https://github.com/pre-commit/pre-commit-hooks"
-      rev: v4.5.0
+      rev: v5.0.0
       hooks:
           - id: check-added-large-files
           - id: check-ast
@@ -44,12 +44,12 @@ repos:
             entry: yamllint --strict --config-file .yamllint.yml
 
     - repo: "https://github.com/crate-ci/typos"
-      rev: v1.19.0
+      rev: dictgen-v0.3.1
       hooks:
           - id: typos
 
     - repo: "https://github.com/ansible/ansible-lint"
-      rev: v24.2.1
+      rev: v24.12.2
       hooks:
           - id: ansible-lint
             additional_dependencies:
